@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tailwind</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body class="bg-[#000] text-[#f2f2f2] dark:bg-[#ddc3ff] dark:text-[#121212]">
+    
+    
+    <div class="wrapper">
+
+
+        <header id="header" class="relative py-8">
+            <div class="header__menu">
+                <div class='container'>
+                    <div class="flex justify-between items-center gap-x-10">
+                        <a class="hover:-translate-y-3 transition-all duration-700 ease-in-out" href="#!">
+                            <svg width="52" height="50" viewBox="0 0 52 50" fill="none" id="logo">
+                                <path d="M26.0012 48.5549C38.972 48.5549 49.4868 38.04 49.4868 25.0693C49.4868 12.0986 38.972 1.5837 26.0012 1.5837C13.0305 1.5837 2.51562 12.0986 2.51562 25.0693C2.51562 38.04 13.0305 48.5549 26.0012 48.5549Z" stroke="white" stroke-width="1.69968" class="dark:stroke-black"/>
+                                <path d="M14.6308 5.00756C14.9566 4.69956 15.6511 4.49991 16.9665 4.752C18.2422 4.99646 19.8749 5.62873 21.7666 6.63366C25.539 8.63767 30.1638 12.0278 34.724 16.3378C39.2842 20.6479 42.8711 25.0189 44.9914 28.5844C46.0547 30.3723 46.7236 31.9155 46.9823 33.1212C47.249 34.3645 47.0377 35.0208 46.7119 35.3288C46.386 35.6368 45.6916 35.8365 44.3761 35.5844C43.1004 35.3399 41.4677 34.7076 39.576 33.7027C35.8036 31.6987 31.1789 28.3086 26.6187 23.9985C22.0585 19.6885 18.4716 15.3174 16.3512 11.752C15.288 9.96404 14.619 8.42088 14.3604 7.2152C14.0937 5.97189 14.3049 5.31555 14.6308 5.00756Z" stroke="white" stroke-width="1.69968" class="dark:stroke-black"/>
+                                <path d="M38.2484 4.99761C38.5666 5.29836 38.7758 5.95692 38.4863 7.22827C38.2065 8.45695 37.5054 10.0322 36.402 11.859C34.2015 15.5019 30.5034 19.9784 25.8207 24.4042C21.138 28.8301 16.4016 32.3253 12.5473 34.4051C10.6145 35.448 8.94787 36.1106 7.64788 36.3751C6.30275 36.6487 5.60597 36.4509 5.28776 36.1502C4.96955 35.8494 4.7603 35.1909 5.0498 33.9195C5.32958 32.6908 6.03071 31.1156 7.13416 29.2888C9.33465 25.6459 13.0326 21.1694 17.7154 16.7435C22.3981 12.3177 27.1344 8.8225 30.9888 6.74273C32.9216 5.69981 34.5882 5.03714 35.8882 4.7727C37.2334 4.49909 37.9302 4.69686 38.2484 4.99761Z" stroke="white" stroke-width="1.69968" class="dark:stroke-black"/>
+                                </svg>                        
+                        </a>
+                        
+                        <nav class="">
+                            <ul class="hidden md:flex md:justify-between md:items-center md:gap-x-6">
+                                <li><a href="" class="text-lg after:transition-all after:duration-300 after:ease-in-out after:block after:w-0 after:h-[2px] after:bg-white hover:after:w-full">Projects</a></li>
+                                <li><a href="" class="text-lg after:transition-all after:duration-300 after:ease-in-out after:block after:w-0 after:h-[2px] after:bg-white hover:after:w-full ">Career</a></li>
+                                <li><a href="" class="text-lg after:transition-all after:duration-300 after:ease-in-out after:block after:w-0 after:h-[2px] after:bg-white hover:after:w-full ">About</a></li>
+                                <li><a href="" class="text-lg after:transition-all after:duration-300 after:ease-in-out after:block after:w-0 after:h-[2px] after:bg-white hover:after:w-full ">Contacts</a></li>
+                            </ul>
+                        </nav>
+        
+                        <div class="">
+                            <label class="dark-btn inline-flex items-center cursor-pointer">
+                                <input type="checkbox" value="" class="sr-only peer">
+                                <div class="relative w-11 h-6 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 rounded-full dark:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:start-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:w-5 after:h-5 after:transition-all dark:bg-indigo-800"></div>
+                                <span class="ms-3 text-sm font-medium text-white dark:text-[#121212]">mode</span>
+                            </label>
+                        </div>
+        
+                        <div class="burger-menu--open">
+                            <img src="images/layout/menu-open.svg" alt="" class="cursor-pointer transition-all duration-500 ease-in-out p-2">
+                        </div>
+        
+        
+                    </div>
+
+                    <div class="header__menu--mob container fixed -top-[100%] flex flex-col justify-between w-full h-full z-50 py-8
+                    bg-black transition-all duration-[.5s] ease-linear dark:bg-[#ddc3ff]">
+                            <div class="flex justify-between items-center"> 
+                                <a class="hover:-translate-y-3 transition-all duration-700 ease-in-out" href="#!">
+                                    <svg width="52" height="50" viewBox="0 0 52 50" fill="none" xmlns="http://www.w3.org/2000/svg" id="logo">
+                                        <path d="M26.0012 48.5549C38.972 48.5549 49.4868 38.04 49.4868 25.0693C49.4868 12.0986 38.972 1.5837 26.0012 1.5837C13.0305 1.5837 2.51562 12.0986 2.51562 25.0693C2.51562 38.04 13.0305 48.5549 26.0012 48.5549Z" stroke="white" stroke-width="1.69968" class="dark:stroke-black"/>
+                                        <path d="M14.6308 5.00756C14.9566 4.69956 15.6511 4.49991 16.9665 4.752C18.2422 4.99646 19.8749 5.62873 21.7666 6.63366C25.539 8.63767 30.1638 12.0278 34.724 16.3378C39.2842 20.6479 42.8711 25.0189 44.9914 28.5844C46.0547 30.3723 46.7236 31.9155 46.9823 33.1212C47.249 34.3645 47.0377 35.0208 46.7119 35.3288C46.386 35.6368 45.6916 35.8365 44.3761 35.5844C43.1004 35.3399 41.4677 34.7076 39.576 33.7027C35.8036 31.6987 31.1789 28.3086 26.6187 23.9985C22.0585 19.6885 18.4716 15.3174 16.3512 11.752C15.288 9.96404 14.619 8.42088 14.3604 7.2152C14.0937 5.97189 14.3049 5.31555 14.6308 5.00756Z" stroke="white" stroke-width="1.69968" class="dark:stroke-black"/>
+                                        <path d="M38.2484 4.99761C38.5666 5.29836 38.7758 5.95692 38.4863 7.22827C38.2065 8.45695 37.5054 10.0322 36.402 11.859C34.2015 15.5019 30.5034 19.9784 25.8207 24.4042C21.138 28.8301 16.4016 32.3253 12.5473 34.4051C10.6145 35.448 8.94787 36.1106 7.64788 36.3751C6.30275 36.6487 5.60597 36.4509 5.28776 36.1502C4.96955 35.8494 4.7603 35.1909 5.0498 33.9195C5.32958 32.6908 6.03071 31.1156 7.13416 29.2888C9.33465 25.6459 13.0326 21.1694 17.7154 16.7435C22.3981 12.3177 27.1344 8.8225 30.9888 6.74273C32.9216 5.69981 34.5882 5.03714 35.8882 4.7727C37.2334 4.49909 37.9302 4.69686 38.2484 4.99761Z" stroke="white" stroke-width="1.69968" class="dark:stroke-black"/>
+                                    </svg>                        
+                                </a>
+                                <div class="burger-menu--close">
+                                    <img src="images/layout/menu-close.svg" alt="" class="cursor-pointer transition-all duration-500 ease-in-out">
+                                </div>
+                            </div>
+                            
+    
+                            <div class="flex flex-col md:flex-row justify-between md:items-center gap-6 text-white text-[clamp(35px,5vw,80px)] 
+                            dark:text-[#121212]">
+                                <h2 data-mob-link>CAREER</h2>
+                                <h2 data-mob-link>ABOUT</h2>
+                                <h2 data-mob-link>CONTACTS</h2>
+                            </div>
+                            <div class="flex justify-between">
+                                <div class="flex flex-col gap-y-2">
+                                    <h6 class="text-md mb-[15px]">Our Projects</h6>
+                                    <a href="#!" class="opacity-75 hover:opacity-90">Trackee</a>
+                                    <a href="#!" class="opacity-75 hover:opacity-90">WingRiders</a>
+                                    <a href="#!" class="opacity-75 hover:opacity-90">Worldcoin</a>
+                                </div>
+                                <div class="hidden md:flex md:flex-col md:gap-y-2">
+                                    <h6 class="text-md mb-[15px]">Follow us</h6>
+                                    <a href="#!" class="opacity-75 hover:opacity-90">Instagram</a>
+                                    <a href="#!" class="opacity-75 hover:opacity-90">X</a>
+                                    <a href="#!" class="opacity-75 hover:opacity-90">Reddit</a>
+                                </div>
+                                <div>
+                                    <h6 class="text-md mb-[15px]">Direct contact</h6>
+                                    <a href="mailto:idemvpered@gmail.ru" class="opacity-75 hover:opacity-90 w-1">idemvpered@gmail.ru</a>
+                                </div>
+                            </div>
+    
+                            <div class="absolute left-[20vw] w-px h-full bg-white opacity-10 z-50"></div>
+                            <div class="absolute left-[40vw] w-px h-full bg-white opacity-10 z-50"></div>
+                            <div class="absolute left-[60vw] w-px h-full bg-white opacity-10 z-50"></div>
+                            <div class="absolute left-[80vw] w-px h-full bg-white opacity-10 z-50"></div>
+
+                    </div>
+
+
+
+                    <div class="layout">
+
+                        <div class="flex justify-between items-center gap-x-4 py-12">
+                            <h1 class="max-w-[620px] text-[clamp(25px,5vw,80px)] text-right" id="layout-title">
+                                <span class="block">Design studio</span>
+                                <span class="block">for the</span>
+                                <span class="block">web3 world</span>
+                            </h1>
+
+                            <img src="images/layout/phone.png" alt="" class="max-w-[50vw]" id="phone">
+                        </div>
+        
+                        <div class="flex items-center gap-x-12 cursor-pointer group/arrow" id="layout-arrow">
+                            <svg width="40" height="39" viewBox="0 0 40 39" fill="none" xmlns="http://www.w3.org/2000/svg" class="arrow-anim cursor-pointer" class="">
+                                <path d="M20 38.3332V1.6665" stroke="white" stroke-linecap="round" stroke-linejoin="round" class="dark:stroke-black"/>
+                                <path d="M33.3336 25L20.0003 38.3333L6.66699 25" stroke="white" stroke-linecap="round" stroke-linejoin="round" class="dark:stroke-black"/>
+                            </svg>                            
+                            <a class="opacity-60 text-lg cursor-pointer transition-all duration-300 ease-in-out 
+                            group-hover/arrow:opacity-85" href="#about">We help companies design their products to be ready for web3 world</a>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </header>
+
+
+
+
+        <main class="main mb-[60px]">
+
+
+
+            <section id="clients" class="">
+                <div class="container">
+                    <div>
+                        <h3 class="text-white dark:text-[#121212] text-lg opacity-70 mb-6">Our clients are backed by:</h3>
+                        <div class="flex flex-wrap justify-between items-center gap-5">
+                            <img src="images/clients/1.svg" alt="" class="w-[40vw] md:w-[18vw] hover:shadow-lg hover:shadow-violet-950 transition-all duration-500 ease-in-out ">
+                            <img src="images/clients/2.svg" alt="" class="w-[40vw] md:w-[18vw] hover:shadow-lg hover:shadow-violet-950 transition-all duration-500 ease-in-out ">
+                            <img src="images/clients/1.svg" alt="" class="w-[40vw] md:w-[18vw] hover:shadow-lg hover:shadow-violet-950 transition-all duration-500 ease-in-out ">
+                            <img src="images/clients/3.svg" alt="" class="w-[40vw] md:w-[18vw] hover:shadow-lg hover:shadow-violet-950 transition-all duration-500 ease-in-out ">
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+            <section id="company">
+                <div class="container">
+                    <div class="flex flex-col lg:flex-row lg:justify-between items-center gap-5">
+
+                        <div>
+                            <h2 class="text-white text-[26px] md:text-[34px] mb-[45px] dark:text-[#121212]">What is Web3 studio?</h2>
+                            <p class="text-white opacity-70 max-w-[540px] dark:text-[#121212]">Things around crypto, NFTs and web3 as a whole are unbelievably interesting. Unfortunately, the overall usability as well as the quality of the UI is often still not up to the task. To achieve mass adoption, overcoming those hurdles will be key. And this is where our story begins.</p>
+                        </div>
+
+                        <div class="relative w-[90vw] lg:w-[40vw] h-[220px]">
+                            <img src="images/company-info/loop.svg" alt="" class="absolute top-0 left-0 right-0 bottom-0 w-full h-full">
+                            <svg viewBox="0 0 594 217" fill="none" class="absolute top-0 left-0 right-0 bottom-0 w-full h-full
+                                                                                                   animate-[loop_4.5s_infinite_ease]">
+                                <g clip-path="url(#clip0_206_1317)">
+                                <path d="M592.5 107.717C592.5 167.204 544.27 215.433 484.783 215.433C417.436 215.433 350.128 161.595 296.25 107.717C242.372 53.8385 175.064 0 107.716 0C48.2295 0 0 48.2295 0 107.717C0 167.204 48.2295 215.433 107.716 215.433C175.064 215.433 242.372 161.595 296.25 107.717C350.128 53.8385 417.436 0 484.783 0C544.27 0 592.5 48.2295 592.5 107.717Z" stroke="" stroke-miterlimit="10" stroke-linecap="square" class="loop stroke-purple-950 stroke-2 dark:stroke-lime-500"></path>
+                                </g>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+            <section id="projects">
+                <div class="container">
+                    <h1 class="text-white dark:text-[#121212] text-[clamp(25px,5vw,80px)] mb-[50px]
+                                 after:transition-all after:duration-300 after:ease-in-out after:block after:w-0 after:h-[2px] after:bg-white hover:after:w-full after:opacity-15 cursor-default">Projects</h1>
+                    <div class="grid grid-cols-[50%_50%] grid-rows-[repeat(5,105px)] md:grid-rows-[repeat(9,105px)] gap-3" id="projects-main">
+                        <a href="" class="col-span-1 row-[1/3] md:row-[1/5]"><img src="images/projects/project-1.png" alt="" class="w-full h-full object-cover"></a>
+                        <a href="" class="col-span-1 row-[1/4] md:row-[1/7]"><img src="images/projects/project-2.png" alt="" class="w-full h-full object-cover"></a>
+                        <a href="" class="col-span-1 row-[3/5] md:row-[5/9]"><img src="images/projects/project-3.png" alt="" class="w-full h-full object-cover"></a>
+                        <a href="" class="col-span-1 row-[5/6] md:row-[9/10] self-center w-full h-full p-2 bg-zinc-950">
+                            <h6 class="text-white dark:text-[#121212] text-[18px] mb-[10px]">How we design web3 products</h6>
+                            <span class="text-[14px] opacity-75">coming soon</span>
+                        </a>
+                        <a href="" class="col-span-1 row-[4/6] md:row-[7/10]"><img src="images/projects/project-4.png" alt="" class="w-full h-full object-cover"></a>
+                    </div>
+                </div>
+            </section>
+ 
+
+            <section id="slider">
+                <div class="container">
+                    
+                    <h1 class="text-white dark:text-[#121212] text-[clamp(25px,5vw,80px)] mb-[50px]
+                    after:transition-all after:duration-300 after:ease-in-out after:block after:w-0 after:h-[2px] after:bg-white hover:after:w-full after:opacity-15 cursor-default">Other projects</h1>
+    
+                    <div class="overflow-hidden" id="slider-main">
+                        <div class="swiper-wrapper ease-in-out">
+                            <div class="swiper-slide">
+                                <img src="images/other/1.png" alt="" class="w-full h-full object-cover">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="images/other/2.png" alt="" class="w-full h-full object-cover">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="images/other/3.png" alt="" class="w-full h-full object-cover">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="images/other/1.png" alt="" class="w-full h-full object-cover">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="images/other/2.png" alt="" class="w-full h-full object-cover">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="images/other/3.png" alt="" class="w-full h-full object-cover">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="images/other/1.png" alt="" class="w-full h-full object-cover">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="images/other/2.png" alt="" class="w-full h-full object-cover">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="images/other/3.png" alt="" class="w-full h-full object-cover">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="images/other/1.png" alt="" class="w-full h-full object-cover">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="images/other/2.png" alt="" class="w-full h-full object-cover">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="images/other/3.png" alt="" class="w-full h-full object-cover">
+                            </div>
+                        </div>
+    
+                        <div class="slider-navigate flex justify-between items-center mt-[20px]">
+                            <div class="" id="pagination">
+        
+                            </div>
+                            <div class="flex items-center gap-x-[40px]">
+                                <img src="images/other/left-arr.svg" alt="" id="left-arrow">
+                                <img src="images/other/right-arr.svg" alt="" id="right-arrow">
+                            </div>
+                        </div>
+    
+                    </div>
+
+                </div>
+            </section>
+
+
+            <section id="line">
+                <div class="relative h-[30vw]">
+
+                    <img src="images/svg-line/line.svg" alt="" class="absolute top-0 left-0 right-0 bottom-0">
+                    <svg viewBox="0 0 1920 704" fill="none" 
+                    class="absolute top-0 left-0 right-0 bottom-0 animate-[line-animation_5s_infinite_ease]">
+                        <g clip-path="url(#clip0_142_646)">
+                        <line x1="-3" y1="353.5" x2="480" y2="353.5" stroke="white" class="dark:stroke-indigo-700 stroke-2"></line>
+                        <line x1="481" y1="592.5" x2="960" y2="592.5" stroke="white" class="dark:stroke-indigo-700 stroke-2"></line>
+                        <line x1="960" y1="351.5" x2="1440" y2="351.5" stroke="white" class="dark:stroke-indigo-700 stroke-2"></line>
+                        <line x1="480.5" y1="353" x2="480.5" y2="593" stroke="white" class="dark:stroke-indigo-700 stroke-2"></line>
+                        <line x1="960.5" y1="352" x2="960.5" y2="593" stroke="white" class="dark:stroke-indigo-700 stroke-2"></line>
+                        <line x1="1680.5" y1="112" x2="1680.5" y2="352" stroke="white" class="dark:stroke-indigo-700 stroke-2"></line>
+                        <line x1="1920" y1="112.5" x2="1680" y2="112.5" stroke="white" class="dark:stroke-indigo-700 stroke-2"></line>
+                        <line x1="1439.57" y1="351.309" x2="1578.57" y2="110.554" stroke="white" class="dark:stroke-indigo-700 stroke-2"></line>
+                        <line x1="1679.93" y1="351.781" x2="1578.54" y2="110.194" stroke="white" class="dark:stroke-indigo-700 stroke-2"></line>
+                        </g>
+                        <defs>
+                        <clipPath id="clip0_142_646">
+                        <rect width="1920" height="704" fill="white"></rect>
+                        </clipPath>
+                        </defs>
+                    </svg>
+
+                </div>
+            </section>
+
+
+            <section id="about" class="mb-[30px]">
+                <div class="container relative h-[clamp(600px,70vw,800px)]">
+
+                    <div class="absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] z-20 flex flex-col items-center gap-4 w-full text-center">
+                        <h1 class="text-white dark:text-[#121212] text-[clamp(25px,5vw,80px)] mb-[50px]
+                        after:transition-all after:duration-300 after:ease-in-out after:block after:w-0 after:h-[2px] after:bg-white hover:after:w-full after:opacity-15 cursor-default">About</h1>
+                        <p class="text-white dark:text-[#121212] opacity-70 w-full md:max-w-[600px] mb-[15px]">Team of product and brand designers that are really passionate about blockchain technology and good design. We are not just UI freaks! We advocate users for better product experience and common sense.</p>
+                        <div class="flex items-center gap-x-3">
+                            <a href="#!" class="">More about us</a>
+                            <svg width="40" height="41" viewBox="0 0 40 41" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M38.3805 20.5625H1.71387" stroke="white" stroke-linecap="round" stroke-linejoin="round" class="dark:stroke-black"/>
+                                <path d="M25.0469 7.22949L38.3802 20.5628L25.0469 33.8962" stroke="white" stroke-linecap="round" stroke-linejoin="round" class="dark:stroke-black"/>
+                            </svg>
+                        </div>
+                    </div>
+
+                    <img src="images/about/1.png" alt="" class="absolute left-[8vw] top-14 z-10 w-0 md:w-[16vw]" data-speed=".22">
+                    <img src="images/about/2.png" alt="" class="absolute left-[20vw] bottom-0 z-10 w-0 md:w-[25vw]" data-speed=".22">
+                    <img src="images/about/3.png" alt="" class="absolute right-[8vw] top-[120px] z-10 w-0 md:w-[16vw]" data-speed=".42">
+
+                    <svg width="287" height="288" viewBox="0 0 287 288" fill="none" class="absolute right-0 top-0">
+                        <g clip-path="url(#clip0_27_6127)">
+                        <path d="M2.0166 286.875L2.56859 286.321L2.21442 285.968L5.01834 283.154L5.37251 283.507L8.17643 280.694L7.82226 280.341L10.6262 277.527L10.9804 277.88L13.7843 275.066L13.4302 274.713L16.2341 271.9L16.5882 272.252L19.3922 269.439L19.038 269.086L21.8419 266.272L22.1961 266.625L25 263.811L24.6458 263.458L27.4497 260.645L27.8039 260.998L30.6078 258.184L30.2537 257.831L33.0576 255.017L33.4118 255.37L36.2157 252.556L35.8615 252.203L38.6654 249.39L39.0196 249.743L41.8235 246.929L41.4694 246.576L44.2733 243.762L44.6275 244.115L47.4314 241.301L47.0772 240.949L49.8811 238.135L50.2353 238.488L53.0392 235.674L52.6851 235.321L55.489 232.507L55.8431 232.86L58.6471 230.047L58.2929 229.694L61.0968 226.88L61.451 227.233L64.2549 224.419L63.9007 224.066L66.7047 221.252L67.0588 221.605L69.8627 218.792L69.5086 218.439L72.3125 215.625L72.6667 215.978L75.4706 213.164L75.1164 212.811L77.9203 209.998L78.2745 210.35L81.0784 207.537L80.7243 207.184L83.5282 204.37L83.8824 204.723L86.6863 201.909L86.3321 201.556L89.136 198.743L89.4902 199.096L92.2941 196.282L91.9399 195.929L94.7439 193.115L95.098 193.468L97.9019 190.654L97.5478 190.301L100.352 187.488L100.706 187.841L103.509 185.027L103.155 184.674L105.959 181.86L106.313 182.213L109.117 179.4L108.763 179.047L111.567 176.233L111.921 176.586L114.725 173.772L114.371 173.419L117.175 170.605L117.529 170.958L120.333 168.145L119.979 167.792L122.783 164.978L123.137 165.331L125.941 162.517L125.586 162.164L128.39 159.351L128.745 159.703L131.548 156.89L131.194 156.537L133.998 153.723L134.352 154.076L137.156 151.262L136.802 150.909L139.606 148.096L139.96 148.449L142.764 145.635L142.41 145.282L145.214 142.468L145.568 142.821L148.372 140.007L148.018 139.655L150.822 136.841L151.176 137.194L153.98 134.38L153.626 134.027L156.43 131.213L156.784 131.566L159.588 128.753L159.233 128.4L162.037 125.586L162.392 125.939L165.195 123.125L164.841 122.772L167.645 119.958L167.999 120.311L170.803 117.498L170.449 117.145L173.253 114.331L173.607 114.684L176.411 111.87L176.057 111.517L178.861 108.704L179.215 109.057L182.019 106.243L181.665 105.89L184.469 103.076L184.823 103.429L187.627 100.615L187.273 100.262L190.077 97.4486L190.431 97.8015L193.235 94.9878L192.88 94.6348L195.684 91.8211L196.039 92.1741L198.843 89.3603L198.488 89.0074L201.292 86.1937L201.646 86.5466L204.45 83.7329L204.096 83.3799L206.9 80.5662L207.254 80.9191L210.058 78.1054L209.704 77.7525L212.508 74.9387L212.862 75.2917L215.666 72.4779L215.312 72.125L218.116 69.3113L218.47 69.6642L221.274 66.8505L220.92 66.4975L223.724 63.6838L224.078 64.0367L226.882 61.223L226.528 60.8701L229.332 58.0563L229.686 58.4093L232.49 55.5956L232.135 55.2426L234.939 52.4289L235.294 52.7818L238.097 49.9681L237.743 49.6151L240.547 46.8014L240.901 47.1543L243.705 44.3406L243.351 43.9877L246.155 41.174L246.509 41.5269L249.313 38.7132L248.959 38.3602L251.763 35.5465L252.117 35.8994L254.921 33.0857L254.567 32.7328L257.371 29.919L257.725 30.272L260.529 27.4582L260.175 27.1053L262.979 24.2916L263.333 24.6445L266.137 21.8308L265.783 21.4778L268.587 18.6641L268.941 19.017L271.745 16.2033L271.39 15.8504L274.194 13.0366L274.549 13.3896L277.352 10.5758L276.998 10.2229L279.802 7.40917L280.156 7.76211L282.96 4.94837L282.606 4.59544L285.41 1.78171L285.764 2.13464L286.312 1.58496V2.36794H286.812V6.35405H286.312V10.3402H286.812V14.3263H286.312V18.3124H286.812V22.2985H286.312V26.2846H286.812V30.2707H286.312V34.2568H286.812V38.243H286.312V42.2291H286.812V46.2152H286.312V50.2013H286.812V54.1874H286.312V58.1735H286.812V62.1596H286.312V66.1457H286.812V70.1318H286.312V74.118H286.812V78.1041H286.312V82.0902H286.812V86.0763H286.312V90.0624H286.812V94.0485H286.312V98.0346H286.812V102.021H286.312V106.007H286.812V109.993H286.312V113.979H286.812V117.965H286.312V121.951H286.812V125.938H286.312V129.924H286.812V133.91H286.312V137.896H286.812V141.882H286.312V145.868H286.812V149.854H286.312V153.84H286.812V157.826H286.312V161.813H286.812V165.799H286.312V169.785H286.812V173.771H286.312V177.757H286.812V181.743H286.312V185.729H286.812V189.715H286.312V193.701H286.812V197.688H286.312V201.674H286.812V205.66H286.312V209.646H286.812V213.632H286.312V217.618H286.812V221.604H286.312V225.59H286.812V229.577H286.312V233.563H286.812V237.549H286.312V241.535H286.812V245.521H286.312V249.507H286.812V253.493H286.312V257.479H286.812V261.465H286.312V265.452H286.812V269.438H286.312V273.424H286.812V277.41H286.312V281.396H286.812V285.382H286.312V286.875H284.826V287.375H280.854V286.875H276.881V287.375H272.909V286.875H268.937V287.375H264.965V286.875H260.993V287.375H257.02V286.875H253.048V287.375H249.076V286.875H245.104V287.375H241.131V286.875H237.159V287.375H233.187V286.875H229.215V287.375H225.243V286.875H221.27V287.375H217.298V286.875H213.326V287.375H209.354V286.875H205.381V287.375H201.409V286.875H197.437V287.375H193.465V286.875H189.493V287.375H185.52V286.875H181.548V287.375H177.576V286.875H173.604V287.375H169.631V286.875H165.659V287.375H161.687V286.875H157.715V287.375H153.743V286.875H149.77V287.375H145.798V286.875H141.826V287.375H137.854V286.875H133.881V287.375H129.909V286.875H125.937V287.375H121.965V286.875H117.993V287.375H114.02V286.875H110.048V287.375H106.076V286.875H102.104V287.375H98.1319V286.875H94.1596V287.375H90.1874V286.875H86.2152V287.375H82.243V286.875H78.2707V287.375H74.2985V286.875H70.3263V287.375H66.354V286.875H62.3818V287.375H58.4096V286.875H54.4373V287.375H50.4651V286.875H46.4929V287.375H42.5207V286.875H38.5484V287.375H34.5762V286.875H30.604V287.375H26.6317V286.875H22.6595V287.375H18.6873V286.875H14.7151V287.375H10.7428V286.875H6.77057V287.375H2.79832V286.875H2.0166Z" stroke="#353535" stroke-dasharray="4 4"/>
+                        </g>
+                        <defs>
+                        <clipPath id="clip0_27_6127">
+                        <rect width="286" height="287" fill="white" transform="translate(0.8125 0.375)"/>
+                        </clipPath>
+                        </defs>
+                    </svg>
+                    <svg width="414" height="414" viewBox="0 0 414 414" fill="none" class="absolute -left-[20vw] top-[40%]">
+                        <rect x="0.5" y="0.5" width="413" height="413" stroke="#353535"/>
+                    </svg>
+
+                </div>
+            </section>
+
+
+        </main> 
+
+
+
+
+        <footer id="footer">
+            <div class="container">
+
+                <div class="flex justify-between gap-x-[20px] mb-[15px]">
+                    <div class="">
+                        <h2 class="text-white dark:text-[#121212] text-[30px] md:text-[45px] mb-[45px]">Web3 product studio</h2>
+                        <p class="text-white dark:text-[#121212] opacity-70 max-w-[500px]">Feel free to reach out if you want to collaborate
+                           with us, or simply have a chat.</p>
+                    </div>
+                    <div class="hidden md:flex md:flex-col md:gap-y-[8px] text-white dark:text-[#121212]">
+                        <a href="#!" class="opacity-80 text-lg after:transition-all after:duration-300 after:ease-in-out after:block after:w-0 after:h-[2px] after:bg-pink-300 hover:after:w-full after:opacity-40">WingRiders</a>
+                        <a href="#!" class="opacity-80 text-lg after:transition-all after:duration-300 after:ease-in-out after:block after:w-0 after:h-[2px] after:bg-pink-300 hover:after:w-full after:opacity-40">Trackee</a>
+                        <a href="#!" class="opacity-80 text-lg after:transition-all after:duration-300 after:ease-in-out after:block after:w-0 after:h-[2px] after:bg-pink-300 hover:after:w-full after:opacity-40">Worldcoin</a>
+                        <a href="#!" class="opacity-80 text-lg after:transition-all after:duration-300 after:ease-in-out after:block after:w-0 after:h-[2px] after:bg-pink-300 hover:after:w-full after:opacity-40">Audience+</a>
+                    </div>
+                    <div class="flex flex-col gap-y-[8px] text-white dark:text-[#121212]">
+                        <a href="#!" class="opacity-80 text-lg after:transition-all after:duration-300 after:ease-in-out after:block after:w-0 after:h-[2px] after:bg-pink-300 hover:after:w-full after:opacity-40">Facebook</a>
+                        <a href="#!" class="opacity-80 text-lg after:transition-all after:duration-300 after:ease-in-out after:block after:w-0 after:h-[2px] after:bg-pink-300 hover:after:w-full after:opacity-40">Instagram</a>
+                        <a href="#!" class="opacity-80 text-lg after:transition-all after:duration-300 after:ease-in-out after:block after:w-0 after:h-[2px] after:bg-pink-300 hover:after:w-full after:opacity-40">Dribbble</a>
+                        <a href="#!" class="opacity-80 text-lg after:transition-all after:duration-300 after:ease-in-out after:block after:w-0 after:h-[2px] after:bg-pink-300 hover:after:w-full after:opacity-40">Linkedin</a>
+                    </div>
+                </div>
+                <div class="inline-flex items-center gap-x-3 mb-[40px] cursor-pointer group/footer-arrow" id="footer-arrow">
+                    <a href="https://t.me/sokyl" class="opacity-80 group-hover/footer-arrow:opacity-100 cursor-pointer transition-all duration-300 ease-in-out">@Powered by Danila Katyshev</a>
+                    <svg width="40" height="41" viewBox="0 0 40 41" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M38.3805 20.5625H1.71387" stroke="white" stroke-linecap="round" stroke-linejoin="round" class="dark:stroke-black"/>
+                        <path d="M25.0469 7.22949L38.3802 20.5628L25.0469 33.8962" stroke="white" stroke-linecap="round" stroke-linejoin="round" class="dark:stroke-black"/>
+                    </svg>
+                </div>
+
+            </div>
+
+                <div class="flex">
+                    <img src="images/footer/pattern.svg" alt="" class="w-[33.33vw]">
+                    <img src="images/footer/pattern.svg" alt="" class="w-[33.33vw]">
+                    <img src="images/footer/pattern.svg" alt="" class="w-[33.33vw]">
+                </div>
+
+        </footer>
+
+
+    </div>
+
+
+
+    <script src="js/js-extra-settings/inputmask.min.js"></script>
+    <script src="js/js-extra-settings/gsap.min.js"></script>
+    <script src="js/js-extra-settings/ScrollTrigger.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script src="js/fetch.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>   
